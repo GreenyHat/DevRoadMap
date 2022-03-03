@@ -10,7 +10,7 @@ var ctx = canvas.getContext("2d");
 var width = canvas.width;
 var x1, y0; //x0 and y0 --> initial x and y \\ //x1 and y1 --> final x and y \\ (Canvas)
 var lColor = "black"
-// while (lCount < lines) 
+// while (lCount < lines)  
 // {
 //     draw("black", 0, 0, 10, 300);
 //     lCount++;
@@ -35,7 +35,7 @@ var lColor = "black"
 function Draw( color,xInit,yInit,xFinal,yFinal) 
 {
     ctx.beginPath();
-    ctx.strokeStyjle = color;//no es una funcion!! Ese fue el error. CUIDADO CON ESAS MIERDAS CABRONAZO!
+    ctx.strokeStyle = color;//no es una funcion!! Ese fue el error. CUIDADO CON ESAS MIERDAS CABRONAZO!
     ctx.moveTo(xInit,yInit);
     ctx.lineTo(xFinal,yFinal);
     ctx.stroke();
@@ -48,7 +48,7 @@ function DrawWhenClick()
     x1, y0;
     lines = parseInt(text_line.value);//xk esta linea??
     lCount;
-    lColor = "black";
+    lColor = "yellow";
     var space = width / lines
 
     while (lCount < lines)

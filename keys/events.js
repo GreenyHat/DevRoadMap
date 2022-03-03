@@ -1,19 +1,66 @@
-var keys = {UP:38, DOWN:40, LEFT:37, RIGHT:39};
-
-document.addEventListener("keydown", DrawWithKey)
+var keys = {UP:38, DOWN:40, LEFT:37, RIGHT:39}; //objeto de constantes[la mayuscula es una buena practica para las constantes] (JSON)
 
 
-function DrawWithKey(event)//la variable event se llena de datos [es interesante para SEO, por ejemplo para el evento click almacena posicion de raton
+var x = 150;
+var y = 150;
+
+var canvasKey = document.getElementById("CanvasKey");
+var ctx = canvasKey.getContext("2d"); //si lo pasas por parametro en la funcion Draw no tienes que preocuparte por la variables internas
+document.addEventListener("keydown", DrawWithKey);//<-- de aqui recibe los datos el switch
+
+//cuando oprimes una teclab(en ESTE caso) se dispara la funcion referenciada
+Draw("red",x-1,y-1,x+1,y+1);//init point
+
+function DrawWithKey(event)/*la variable event se llena de datos que recibe de addEventListener 
+hacia la funcion que coloques en los parámetros junto con el activador de la funcion 
+(en este caso "keyup", es decir, cuando levantas linea) [es interesante para SEO,
+ por ejemplo para el evento click almacena posicion de raton*/
 {
-    //console.log(event.keyCode);//lo de keyCode lo hemos averiguado haciendo un consLog a event y presionando teclas para ver sus atributos
-    // console.log("key down");
-     console.log(keys);
-    if (event.keyCode == keys.RIGHT) 
+    var movement = 10;
+    var colorLine = "grey";
+    
+    switch (event.keyCode) 
     {
-        console.log("right");
+        
+       
+        case keys.UP:
+            Draw(colorLine,x,y,x,y-movement)
+            y = y - movement;
+            
+            break;
+        case keys.DOWN:
+            Draw(colorLine,x,y,x,y+movement)
+            y = y + movement;
+            break;
+        case keys.LEFT:
+            Draw(colorLine,x,y,x - movement,y)
+            x = x - movement;
+            break;
+        case keys.RIGHT:
+            Draw(colorLine,x,y,x + movement,y)
+            x = x + movement;
+            break;
+
+        default:
+            alert("Sólo puedes usar flechas");
+            break;
     }
-   
-} 
+    // console.log(event.keyCode);//lo de keyCode lo hemos averiguado haciendo un consLog a event y presionando teclas para buscar en sus atributos
+   //console.log(event); //Esto te permite ver los atributos del objeto
+}    
+
+function Draw( color,xInit,yInit,xFinal,yFinal) 
+{
+    ctx.beginPath();
+    ctx.strokeStyle = color;//no es una funcion!! Ese fue el error. CUIDADO CON ESAS MIERDAS CABRONAZO!
+    ctx.lineWidth = 3;//cuantos pixeles ocupa (tenemos 300 en el lienzo)
+    ctx.moveTo(xInit,yInit);
+    ctx.lineTo(xFinal,yFinal);
+    ctx.stroke();
+    ctx.closePath();
+}
+
+
 
 /**up 38
      * down 40
