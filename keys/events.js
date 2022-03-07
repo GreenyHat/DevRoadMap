@@ -5,19 +5,20 @@ var x = 150;
 var y = 150;
 
 var canvasKey = document.getElementById("CanvasKey");
-var ctx = canvasKey.getContext("2d"); //si lo pasas por parametro en la funcion Draw no tienes que preocuparte por la variables internas
-document.addEventListener("keydown", DrawWithKey);//<-- de aqui recibe los datos el switch
+var ctx = canvasKey.getContext("2d"); 
+document.addEventListener("keyup", DrawWithKey);//<-- de aqui recibe los datos el switch
 
 //cuando oprimes una teclab(en ESTE caso) se dispara la funcion referenciada
 Draw("red",x-1,y-1,x+1,y+1);//init point
 
-function DrawWithKey(event)/*la variable event se llena de datos que recibe de addEventListener 
+function DrawWithKey(event)/*la variable event es un parametro de entrada que se llena de datos que recibe de addEventListener 
 hacia la funcion que coloques en los parámetros junto con el activador de la funcion 
 (en este caso "keyup", es decir, cuando levantas linea) [es interesante para SEO,
  por ejemplo para el evento click almacena posicion de raton*/
 {
     var movement = 10;
     var colorLine = "grey";
+    console.log(event) //
     
     switch (event.keyCode) 
     {
@@ -44,10 +45,12 @@ hacia la funcion que coloques en los parámetros junto con el activador de la fu
         default:
             alert("Sólo puedes usar flechas");
             break;
+            
     }
     // console.log(event.keyCode);//lo de keyCode lo hemos averiguado haciendo un consLog a event y presionando teclas para buscar en sus atributos
-   //console.log(event); //Esto te permite ver los atributos del objeto
+   //console.log(event); //Esto te permite ver los atributos del objeto para usarlos en los bloques de codigo como con keys.UP por ejemplo.
 }    
+
 
 function Draw( color,xInit,yInit,xFinal,yFinal) 
 {
@@ -62,7 +65,7 @@ function Draw( color,xInit,yInit,xFinal,yFinal)
 
 
 
-/**up 38
+  /* *up 38
      * down 40
      * left 37
      * right 39
