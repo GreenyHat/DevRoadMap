@@ -1,6 +1,5 @@
 var keys = {UP:38, DOWN:40, LEFT:37, RIGHT:39}; //objeto de constantes[la mayuscula es una buena practica para las constantes] (JSON)
 
-
 var x = 150;
 var y = 150;
 
