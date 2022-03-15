@@ -8,7 +8,7 @@ var lCount = 0;
 var lines = 30;//LO QUE RECORRE EN EL EJE Y
 var ctx = canvas.getContext("2d");
 var width = canvas.width;
-var x1, y0; //x0 and y0 --> initial x and y \\ //x1 and y1 --> final x and y \\ (Canvas)
+var x1, y0; //y0 --> initial y \\ //x1 --> final x \\ (Canvas)
 var lColor = "black"
 // while (lCount < lines)  
 // {
@@ -45,9 +45,7 @@ function Draw( color,xInit,yInit,xFinal,yFinal)
 function DrawWhenClick()
 {
     // testing simple: alert("Hola");
-    x1, y0;
-    lines = parseInt(text_line.value);//xk esta linea??
-    lCount;
+    lines = parseInt(text_line.value); //--> transforma lines en el input de la caja del html y lo usa como condicion abajo para ejecutar el ciclo y que dibuje lineas
     lColor = "yellow";
     var space = width / lines
 
@@ -76,6 +74,3 @@ DrawWhenClick();
  * Problema 3: Dibujar al darle click tras obtener el numero
  * Problema 4: Como hacer que el numero de lineas sea el de una variable
  */
-   
-
-
