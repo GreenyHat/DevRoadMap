@@ -9,3 +9,5 @@ Resources:
 🏗️ [HTML tags](https://allthetags.com/)
 
 🗃️ [Files](https://github.com/GreenyHat/DevelopRoadMap/tree/master/binaryFiles)
+
+📇 [WebDev docs](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction)
