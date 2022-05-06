@@ -21,4 +21,4 @@ Resources:
 
 🦮 [FlexBox Guide(CSS)](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-📥 [Rules of margin](https://www.joshwcomeau.com/css/rules-of-margin-collapse/)
+📥 [Rules of margin](https://www.joshwcomeau.com/css rules-of-margin-collapse/)
