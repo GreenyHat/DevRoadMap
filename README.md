@@ -9,7 +9,7 @@ Ha resultado interesante el siguiente enlace para consultar atributos, propiedad
 
 Como nota sobre la atiqueta heading *h1-6* comentar que solo existe hasta la h6, siendo este el encabezado mas pequeño que hay en HTML.
 
-Resources: 
+Resources:
 
 🏗️ [HTML references](https://htmlreference.io/)
 
