@@ -1,7 +1,12 @@
 body
 {
-    color: rgb(90, 240, 90);
-    background-color: black;
-    text-align:center;
-    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(78, 178, 78);
+    background-color: rgb(19, 18, 18);
+    text-align:left;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+#url
+{
+    color: rgb(111, 57, 186);
 }
