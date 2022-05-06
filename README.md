@@ -2,7 +2,7 @@
 
 Here I will update my front end progress:
 
-Resources: 
+Resources:
 
 🏗️ [HTML references](https://htmlreference.io/)
 
