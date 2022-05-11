@@ -1,6 +1,6 @@
 
-// var user = prompt ("Whats your weight?");
-// var planet = parseInt(prompt("Choose your planet:\n1 if it's Jupiter or 2 if it's Marth"))
+var user = prompt ("Whats your weight?"); 
+var planet = parseInt(prompt("Choose your planet:\n1 if it's Jupiter or 2 if it's Marth"))
 var finalWeight = parseFloat(user);
 var earthGrav = 9.8, marthGrav = 3.7, jupGrav = 24.8;
 var finalWeightMarth, finalWeightJup;
