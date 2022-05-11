@@ -103,6 +103,13 @@ Resources:
 
 🦮 [FlexBox Guide(CSS)](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
+<<<<<<< HEAD
 📥 [Rules of margin](https://www.joshwcomeau.com/css rules-of-margin-collapse/)
 >>>>>>> d79aa5b (initial-state)
+<<<<<<< HEAD
 >>>>>>> 4b2c725 (initial-state)
+=======
+=======
+📥 [Rules of margin](https://www.joshwcomeau.com/css/rules-of-margin-collapse/)
+>>>>>>> 822c94a (Update README.md)
+>>>>>>> cba1a5a (Update README.md)
