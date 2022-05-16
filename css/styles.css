@@ -10,3 +10,7 @@ body
 {
     color: rgb(111, 57, 186);
 }
+#name
+{
+    text-align: center;
+}
