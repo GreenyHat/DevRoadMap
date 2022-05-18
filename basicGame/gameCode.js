@@ -22,7 +22,7 @@ var x;
 var background = {url:"tile.png", loadOk:false};
 var pig = {url:"cerdo.png", loadOk:false};
 var cow = {url:"vaca.png", loadOk: false};
-var chiken = {url: "pollo.png", loadOk:false};
+var chiken = {url:"pollo.png", loadOk:false};
 
 background.image = new Image();
 pig.image = new Image();
@@ -86,6 +86,16 @@ function Draw()
             var X = RandomNum(0, 420);
             var Y = RandomNum(0, 420);
             ctx.drawImage(cow.image, X, Y);  
+        }  
+    }
+
+    if (cow.loadOk && background.loadOk && pig.loadOk) 
+    {
+       for (let c = 0; c < 5; c++) 
+       {
+            var X = RandomNum(0, 420);
+            var Y = RandomNum(0, 420);
+            ctx.drawImage(chiken.image, X, Y);  
         }  
     }
 }
