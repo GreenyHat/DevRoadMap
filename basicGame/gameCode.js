@@ -11,6 +11,7 @@
  *  con un booleano. Para eso haremos un "JSON" de cada character 
  * donde se almacene la ruta de cada objeto y el booleano para asegurar 
  * que carga siempre despues de tile 
+ * 5-Generar de manera aleatoria posiciones en X e Y
  * 
  * DESAFÍO: HAZ QUE UN POLLO SE MUEVA CON LAS FLECHAS DEL TECLADO 
  */
