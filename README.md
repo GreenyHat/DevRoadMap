@@ -2,12 +2,12 @@
 
 ## Section 1: HTML notes. Introduction to HTML
 
-Hemos visto las etiquetas, los atributos, la estructura... la convencion sobre las etiquetas sin etiqueta de cierre como `<br />`
+We have seen the tags, the attributes, the structure... the convention about tags without a closing tag like `<br />`
 
-Ha resultado interesante el siguiente enlace para consultar atributos, propiedades, clases... de js, html, css....
+The following link has been interesting to consult attributes, properties, classes... of js, html, css....
 [DevDocs](https://devdocs.io/)
 
-Como nota sobre la atiqueta heading *h1-6* comentar que solo existe hasta la h6, siendo este el encabezado mas pequeño que hay en HTML.
+As a note about the heading *h1-6* tag, comment that it only exists up to h6, this being the most minor heading in HTML.
 
 Resources:
 
