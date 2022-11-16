@@ -1,24 +1,53 @@
-body
-{
-    color: rgb(78, 178, 78);
+body{
+    color: rgb(214, 220, 185);
     background-color:#000000;
-    text-align:left;
+    text-align:center;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 #url
 {
-    color: rgb(1, 1, 227);
+    color: #cce068;
 }
 #name
 {
-    text-align: center;
+    text-align: left;
+}
+
+table{
+    margin: auto;
+
+}
+
+p{
+    width: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+h4{
+    color: #c17f41
+}
+
+
+h3{
+    color: #c17f41
+}
+
+
+h1{
+    color: #c17f41
 }
 
 hr{
-    width: 100%;
-    border-style: none;
+    width: 60%;
+    border-style: dotted;
     border-top-style: dashed;
     border-width: 5px;
-    border-color: #150050;
-}
+    border-color: #6514a8;
+}/*Podemos poner aqui un atributo de altura o de anchura porque se refiere al area de contenido, que serian esas cajas que dice  
+    Angela Yu que describen los contenidos CSS, es interesante comprender esto para manipular cuando fuese necesario estos
+    atributos en cualesquiera casos que se presentasen. Cabe mentionar tambien que algunos elementos del documento
+    HTML como el body tienen algunos valores predeterminados que bloquean ciertas*/
