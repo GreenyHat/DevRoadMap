@@ -25,7 +25,7 @@ function MiniGame(event)
     }
     else
     {
-    document.write("I see... it's your first time... don't worry there is place for all ;)")
+    document.write("I see... it's your first time... don't worry there is place for all. PRESS F5 ;)")
     }
     
 
