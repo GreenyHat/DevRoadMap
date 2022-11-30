@@ -9,18 +9,17 @@ body{
 {
     color: #cce068;
 }
-#name
-{
-    text-align: left;
+#par
+{ 
+    margin: auto;
+    height: 10%;
+    width: 45%;
+   
 }
 
 table{
     margin: auto;
 
-}
-
-p{
-    width: auto;
 }
 
 ul{
@@ -47,7 +46,7 @@ hr{
     border-top-style: dashed;
     border-width: 5px;
     border-color: #6514a8;
-}/*Podemos poner aqui un atributo de altura o de anchura porque se refiere al area de contenido, que serian esas cajas que dice  
+} /*Podemos poner aqui un atributo de ALTURA o de ANCHURA porque se refiere al area de contenido, que serian esas cajas que dice  
     Angela Yu que describen los contenidos CSS, es interesante comprender esto para manipular cuando fuese necesario estos
     atributos en cualesquiera casos que se presentasen. Cabe mentionar tambien que algunos elementos del documento
     HTML como el body tienen algunos valores predeterminados que bloquean ciertas*/
