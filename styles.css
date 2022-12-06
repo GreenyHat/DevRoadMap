@@ -1,5 +1,3 @@
-
-
 nav {
   float: right; /* Desplazamos el nav hacia la izquierda */
 }
@@ -26,13 +24,6 @@ nav ul li:hover {
   background: #3ead47;
 }
 
-#menu {
-  background: rgba(0, 0, 0, 0.9);
-  width: 0%;
-  position: fixed;
-  z-index: 100;
-  margin: auto;
-}
 
 /* p {
   margin-bottom: 20px;
@@ -48,9 +39,7 @@ body {
   width: 80%;
 }
 
-#url {
-  color: #cce068;
-}
+
 
 ul {
   list-style: none;
@@ -68,7 +57,7 @@ hr {
   border-color: #6514a8;
 }
 
-/* .wrapper {
+.wrapper {
   width: 80%;
   margin: auto;
   overflow: hidden;
@@ -78,9 +67,25 @@ hr {
     width: 200px;
   }
   
-*/
+
+
+#menu {
+  background: rgba(0, 0, 0, 0.9);
+  width: 0%;
+  position: fixed;
+  z-index: 100;
+  margin: auto;
+}
+
+#url {
+  color: #cce068;
+}
 #content {
     width: 70%;
     margin: auto;
     
   } 
+
+  #strong{
+    color: brown;
+  }
