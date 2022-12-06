@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  <h1 align = "center">🤙 Hi there!! 🤙</h1>
 
 ## Section 1: HTML notes. Introduction to HTML
@@ -22,3 +23,6 @@ Resources:
 🦮 [FlexBox Guide(CSS)](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 📥 [Rules of margin](https://www.joshwcomeau.com/css/rules-of-margin-collapse/)
+=======
+#Test
+>>>>>>> a9138ce (inital-state)
