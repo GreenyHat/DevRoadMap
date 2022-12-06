@@ -38,7 +38,7 @@ put into use the knowledge acquired in html and css in the development module of
 
 > Architecture diagram goes here. Use the following format:
 
-![Diagram of the <AFS_Page> architecture.](test\SCHEMA.drawio.png)
+![Diagram of the <AFS_Page> architecture.](https://github.com/GreenyHat/testingPage/blob/master/SCHEMA.drawio.png)
 
 > Under the architecture diagram, include this sentence and a link to the page: 
 
