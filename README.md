@@ -42,7 +42,7 @@ put into use the knowledge acquired in html and css in the development module of
 
 > Under the architecture diagram, include this sentence and a link to the page: 
 
-*Click in [this link](https://greenyhat.github.io/StarWars/index.html) to see the basic architecture. In the future I will be updated
+*Click in [this link](https://greenyhat.github.io/StarWars/AfsPage.html) to see the basic architecture. In the future I will be updated
 *
 
 
