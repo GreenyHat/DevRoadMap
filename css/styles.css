@@ -3,6 +3,13 @@ body{
     background-color:#000000;
     text-align:center;
     font-family:Georgia, 'Times New Roman', Times, serif
+      /* Force the body to fill the entire screen */
+  width: 100%;
+  height: 100%;
+  /* Hide elements that flow outside the viewable space */
+  overflow: hidden;
+  /* Black background for the screen */
+  background: #000;
 }
 
 #url
@@ -50,3 +57,13 @@ hr{
     Angela Yu que describen los contenidos CSS, es interesante comprender esto para manipular cuando fuese necesario estos
     atributos en cualesquiera casos que se presentasen. Cabe mentionar tambien que algunos elementos del documento
     HTML como el body tienen algunos valores predeterminados que bloquean ciertas*/
+
+    /*//////////////////////////////////////////////////////////////*/
+    body {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        overflow: hidden;
+      }
+      
+     
