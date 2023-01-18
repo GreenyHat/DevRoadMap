@@ -14,7 +14,7 @@ nav ul li {
 }
 
 nav ul li a {
-  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  display: block; /* Transform the 'a' elemnts to block to manipulate the padding//Convertimos los elementos a en elementos bloque para manipular el padding */
   padding: 20px;
   color: #fff;
   text-decoration: none;
@@ -25,11 +25,6 @@ nav ul li:hover {
 }
 
 
-/* p {
-  margin-bottom: 20px;
-  width: 50%;
-} */
-
 body {
   color: rgb(214, 220, 185);
   background-color: #000000;
@@ -39,6 +34,9 @@ body {
   width: 80%;
 }
 
+a {
+  color: rgb(99, 99, 231);
+}
 
 
 ul {
@@ -57,17 +55,19 @@ hr {
   border-color: #6514a8;
 }
 
-/* .wrapper {
-  width: 80%;
+
+/*config for the vertical menu*/
+.wrapper {
+  width: 100%;
   margin: auto;
   overflow: hidden;
 }
 
 .vertical{
     width: 200px;
-  } */
+  }
   
-
+/*******************************/
 
 #menu {
   background: rgba(0, 0, 0, 0.9);
@@ -87,7 +87,7 @@ hr {
   } 
 
   #strong{
-    color: brown;
+    color: rgb(4, 204, 114);
   }
 /*///////////////////////////////////////////////*/
 
@@ -109,7 +109,7 @@ hr {
 @keyframes star {
   0% {
     opacity: 0;
-    transform: scale(1.5) translateY(-0.75em);
+    transform: scale(1.8) translateY(-4.75em);
   }
   20% {
     opacity: 1;
@@ -127,7 +127,7 @@ hr {
 @keyframes wars {
   0% {
     opacity: 0;
-    transform: scale(1.5) translateY(0.5em);
+    transform: scale(1.5) translateY(5.5em);
   }
   20% {
     opacity: 1;
