@@ -1,6 +1,6 @@
 body {
     color: rgb(214, 220, 185);
-    background-color: #000000;
+    background-color: #312e2e;
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;}
 
@@ -9,7 +9,7 @@ body {
 }
 
 #url:visited {
-    color: #891ae4;
+    color: #1a86e4;
     background-color: #cce068;
 }
 
@@ -21,7 +21,12 @@ body {
 
 #par {
     margin: auto;
-    width: 46%;
+    width: 50%;
+    word-wrap: break-word;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
    
 }
 
