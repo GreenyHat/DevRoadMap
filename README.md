@@ -53,9 +53,10 @@ put into use the knowledge acquired in html and css in the development module of
 - Links shouldn't include "en-us" locale unless they don't work without it.
 - Documentation links should be relative, such as (/azure/feature/article-name).
 - Don't include a trailing slash in any links.
+- Fix the spaces between the boxes of the CSS elements
 
   
-## Related resources
+## Related resources and credits
 
 > Link to support resources).
   
@@ -64,4 +65,12 @@ put into use the knowledge acquired in html and css in the development module of
   - :book: [MDN Web](https://developer.mozilla.org/es/)
   - :student: [Help for the dinamic navigator menu (ES)](http://www.falconmasters.com/web-design/tutorial-menu-de-navegacion-fijo/)
   - :student: [Help for the vertical menu](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_vertical_menu)
+<<<<<<< HEAD
 >>>>>>> 1e893bd (Update README.md)
+=======
+  - :camera: [People who do not exist used](https://this-person-does-not-exist.com/en)
+  - :movie_camera: [Star Wars video](https://www.youtube.com/embed/ScyuT_r8ye0)
+  - :movie_camera: [Star Wars video](https://www.youtube.com/embed/K52fEK1XZNo)
+  - :movie_camera: [Star Wars video](https://www.youtube.com/embed/d4XKlhinUw4)
+  - :movie_camera: [Star Wars video](https://www.youtube.com/embed/lf27ShX5_FA)
+>>>>>>> fee0935 (Update README.md)
