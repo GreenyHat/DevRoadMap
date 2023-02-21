@@ -27,7 +27,7 @@ nav ul li:hover {
 
 body {
   color: rgb(214, 220, 185);
-  background-color: #000000;
+  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: auto;
@@ -44,6 +44,7 @@ ul {
 }
 
 h1 {
+  margin: auto;
   color: #c17f41;
 }
 
@@ -55,19 +56,11 @@ hr {
   border-color: #6514a8;
 }
 
-
-/*config for the vertical menu*/
-.wrapper {
+iframe {
   width: 100%;
-  margin: auto;
-  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
 }
-
-.vertical{
-    width: 200px;
-  }
-  
-/*******************************/
 
 #menu {
   background: rgba(0, 0, 0, 0.9);
@@ -75,6 +68,11 @@ hr {
   position: fixed;
   z-index: 100;
   margin: auto;
+}
+
+#imagend{
+
+  width: 100%;
 }
 
 #url {
@@ -86,24 +84,11 @@ hr {
     
   } 
 
-  #strong{
+#strong{
     color: rgb(4, 204, 114);
   }
 /*///////////////////////////////////////////////*/
 
-/* Animation properties */
-  .star {
-    animation: star 10s ease-out infinite;
-  }
-  .wars {
-    animation: wars 10s ease-out infinite;
-  }
-  .byline span {
-    animation: spin-letters 10s linear infinite;
-  }
-  .byline {
-    animation: move-byline 10s linear infinite;
-  }
 
 /* Keyframes */
 @keyframes star {
@@ -168,15 +153,80 @@ hr {
   }
 }
 
+
+.container {
+  position:relative;
+  width: 100%;
+}
+
+.description {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s, bottom 0.3s;
+}
+
+.container:hover .description {
+  opacity: 1;
+  bottom: 0;
+}
+
+.container img {
+  width: 100%;
+  margin: auto;
+  transition: filter 0.3s; 
+  object-fit: cover;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.container img:hover {
+  filter: brightness(80%);
+  width: 98%;
+}
+
+
+
+
+
+
+
+/*config for the vertical menu*/
+.wrapper {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.vertical{
+    width: 200px;
+  }
+  
+/*******************************/
+/* Animation properties */
+  .star {
+    animation: star 10s ease-out infinite;
+  }
+  .wars {
+    animation: wars 10s ease-out infinite;
+  }
+  .byline span {
+    animation: spin-letters 10s linear infinite;
+  }
+  .byline {
+    animation: move-byline 10s linear infinite;
+  }
+
 /* Make the 3D work on the container */
 .starwars-demo {
   perspective: 800px;
   transform-style: preserve3d;
-}
-
-/* General styles and layout */
-body {
-  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
 }
 
 .starwars-demo {
@@ -192,10 +242,6 @@ body {
   display: inline-block;
 }
 
-imge {
-  width: 50%;
-}
-
 .star, .wars {
   position:static
 }
@@ -206,6 +252,12 @@ imge {
 
 .wars {
   bottom: -0.5em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
 }
 
 /* .byline {
