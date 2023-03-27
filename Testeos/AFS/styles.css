@@ -1,5 +1,5 @@
 nav {
-  float: right; /* Desplazamos el nav hacia la izquierda */
+  float: right; /* move the nav to the left */
 }
 
 nav ul {
@@ -24,7 +24,6 @@ nav ul li:hover {
   background: #3ead47;
 }
 
-
 body {
   color: rgb(214, 220, 185);
   background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
@@ -37,7 +36,6 @@ body {
 a {
   color: rgb(99, 99, 231);
 }
-
 
 ul {
   list-style: none;
@@ -62,15 +60,13 @@ iframe {
   object-fit: cover;
 }
 
-#par{
+#par {
   margin: auto;
   width: 50%;
-  word-wrap: break-word;
   text-align: justify;
   font-size: 16px;
   line-height: 1.5;
   padding: 20px;
- 
 }
 
 #menu {
@@ -81,8 +77,7 @@ iframe {
   margin: auto;
 }
 
-#imagend{
-
+#imagend {
   width: 100%;
 }
 
@@ -90,16 +85,14 @@ iframe {
   color: #cce068;
 }
 #content {
-    width: 70%;
-    margin: auto;
-    
-  } 
+  width: 70%;
+  margin: auto;
+}
 
-#strong{
-    color: rgb(4, 204, 114);
-  }
+#strong {
+  color: rgb(4, 204, 114);
+}
 /*///////////////////////////////////////////////*/
-
 
 /* Keyframes */
 @keyframes star {
@@ -139,18 +132,21 @@ iframe {
 }
 
 @keyframes spin-letters {
-  0%, 10% {
+  0%,
+  10% {
     opacity: 0;
     transform: rotateY(90deg);
   }
   30% {
     opacity: 1;
   }
-  70%, 86% {
+  70%,
+  86% {
     transform: rotateY(0);
     opacity: 1;
   }
-  95%, 100% {
+  95%,
+  100% {
     opacity: 0;
   }
 }
@@ -164,9 +160,9 @@ iframe {
   }
 }
 
-
+/*Animations in the text boxes*/
 .container {
-  position:relative;
+  position: relative;
   width: 100%;
 }
 
@@ -176,7 +172,7 @@ iframe {
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  background-color: #fff;
+  background-color: #989292;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -191,7 +187,7 @@ iframe {
 .container img {
   width: 100%;
   margin: auto;
-  transition: filter 0.3s; 
+  transition: filter 0.3s;
   object-fit: cover;
   display: grid;
   grid-gap: 20px;
@@ -202,12 +198,6 @@ iframe {
   width: 98%;
 }
 
-
-
-
-
-
-
 /*config for the vertical menu*/
 .wrapper {
   width: 100%;
@@ -215,24 +205,24 @@ iframe {
   overflow: hidden;
 }
 
-.vertical{
-    width: 200px;
-  }
-  
+.vertical {
+  width: 200px;
+}
+
 /*******************************/
 /* Animation properties */
-  .star {
-    animation: star 10s ease-out infinite;
-  }
-  .wars {
-    animation: wars 10s ease-out infinite;
-  }
-  .byline span {
-    animation: spin-letters 10s linear infinite;
-  }
-  .byline {
-    animation: move-byline 10s linear infinite;
-  }
+.star {
+  animation: star 10s ease-out infinite;
+}
+.wars {
+  animation: wars 10s ease-out infinite;
+}
+.byline span {
+  animation: spin-letters 10s linear infinite;
+}
+.byline {
+  animation: move-byline 10s linear infinite;
+}
 
 /* Make the 3D work on the container */
 .starwars-demo {
@@ -249,12 +239,9 @@ iframe {
   width: 34em;
 }
 
-.byline span {
-  display: inline-block;
-}
-
-.star, .wars {
-  position:static
+.star,
+.wars {
+  position: static;
 }
 
 .star {
@@ -265,43 +252,41 @@ iframe {
   bottom: -0.5em;
 }
 
+/*////////////////////////*/
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin: auto;
- 
 }
 
-.galleryVideos{
+.galleryVideos {
   margin: auto;
   width: 50%;
-  line-height: 1.5;
+  line-height: 1%;
   padding: 20px;
- 
 }
 
-/* .byline {
-  color: #fff;
-  font-family: "ITC Serif Gothic", Lato;
-  font-size: 2.25em;
-  left: -2em;
-  letter-spacing: 0.4em;
-  right: -2em;
-  text-align: center;
-  text-transform: uppercase;
-  top: 29%;
-} */
+/*Footer*/
 
-/*** Media queries for adjusting to different screen sizes ***/
 
-  @media only screen and (max-width: 600px) {
-    .starwars-demo {
-      font-size: 10px;
-    }
-  }
 
-@media only screen and (max-width: 480px) {
-  .starwars-demo {
-    font-size: 3px;
-  }
-}
+
+		.social{
+			/*las imágenes usadas tienen width de 48px*/
+			width:90px;
+			position:fixed;
+			top:50px;
+			right:0;
+      margin: auto;
+      text-align: justify;	
+      /*border:1px solid #000;*/
+			top:100%;
+			height:205px;
+			/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+			margin-top:-100px;
+		}
+
+
+
+	
