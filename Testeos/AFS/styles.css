@@ -46,13 +46,22 @@ ul {
   
 }
 
+ol{
+  list-style: none;
+  padding: 1%;
+  font-size:20px;
+  margin:2%;
+  width: 50%;
+  text-align: justify ;
+}
+
 h1 {
   margin: auto;
   color: #c17f41;
 }
 
 hr {
-  width: 70%;
+  width: 80%;
   border-style: dotted;
   border-top-style: dashed;
   border-width: 5px;
@@ -65,11 +74,24 @@ iframe {
   object-fit: cover;
 }
 
+#disclaimer{
+  width:10%;
+  position:absolute;
+  right:0;
+  padding: 4%;
+  margin: auto;
+  text-align: justify;	
+  top:15%;
+  margin-top:-150px;
+  font-size: 18px;
+}     
+
+
 #par {
   margin: auto;
   width: 60%;
   text-align: justify;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   padding: 20px;
 }
@@ -300,7 +322,7 @@ iframe {
 
 
 
-		.social{
+	.social{
 			/*las imágenes usadas tienen width de 48px*/
 			width:90px;
 			position:fixed;
@@ -315,6 +337,8 @@ iframe {
 			margin-top:-100px;
       font-size: 18px;
     }     
+
+
 
 
 
