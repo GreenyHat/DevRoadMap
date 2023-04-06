@@ -44,10 +44,7 @@ function Draw( color,xInit,yInit,xFinal,yFinal)
 
 function DrawWhenClick()
 {
-<<<<<<< HEAD
-=======
-    // testing simple: alert("Hola");
->>>>>>> 4b2c725 (initial-state)
+
     lines = parseInt(text_line.value); //--> transforma lines en el input de la caja del html y lo usa como condicion abajo para ejecutar el ciclo y que dibuje lineas
     lColor = "yellow";
     var space = width / lines
