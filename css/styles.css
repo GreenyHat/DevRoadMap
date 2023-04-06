@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
     color: rgb(214, 220, 185);
     background-color: #312e2e;
@@ -62,17 +61,4 @@ hr {
 body {
     width: 100%;
     height: 100%;
-=======
-body
-{
-    color: rgb(78, 178, 78);
-    background-color: rgb(19, 18, 18);
-    text-align:left;
-    font-family:Georgia, 'Times New Roman', Times, serif
-}
-
-#url
-{
-    color: rgb(111, 57, 186);
->>>>>>> 4b2c725 (initial-state)
 }
