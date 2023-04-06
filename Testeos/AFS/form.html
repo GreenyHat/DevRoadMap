@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <div class="input-group">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+
+        <div class="input-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="input-group">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+        </div>
+
+        <div class="input-group">
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="">Seleccionar</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        </div>
+
+        <div class="input-group">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+        </div>
+
+        <div class="input-group">
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" id="nacionalidad" name="nacionalidad" required>
+        </div>
+
+        <div class="input-group">
+            <label for="codigo_postal">Código postal:</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" required>
+        </div>
+
+        <div class="input-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div id="titulaciones">
+            <div class="titulacion">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo">
+                <br>
+                <label for="institucion">Institución:</label>
+                <input type="text" id="institucion" name="institucion">
+                <br>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+        </div>
+        <button id="agregar-titulacion">Agregar otra titulación</button>
+    </form>
+
+    <script>
+        // Obtener los elementos HTML que necesitamos
+        const agregarTitulacionBtn = document.getElementById('agregar-titulacion');
+        const titulacionesDiv = document.getElementById('titulaciones');
+        const titulacionTemplate = document.querySelector('.titulacion');
+
+        // Agregar evento de clic al botón "Agregar otra titulación"
+        agregarTitulacionBtn.addEventListener('click', () => {
+            // Clonar el template de titulación
+            const nuevaTitulacion = titulacionTemplate.cloneNode(true);
+
+            // Limpiar los valores de los inputs clonados
+            nuevaTitulacion.querySelector('#titulo').value = '';
+            nuevaTitulacion.querySelector('#institucion').value = '';
+            nuevaTitulacion.querySelector('#fecha').value = '';
+
+            // Agregar la nueva titulación al contenedor de titulaciones
+            titulacionesDiv.appendChild(nuevaTitulacion);
+        });
+    </script>
+
+    <!-- campos de nivel de inglés -->
+
+    <div class="input-group">
+        <label for="ingles_hablado">Nivel de inglés - Hablado:</label>
+        <input type="radio" id="ingles_hablado_excelente" name="ingles_hablado" value="excelente">
+        <label for="ingles_hablado_excelente">Excelente</label>
+        <label for=" ingles_hablado_bien">Bien</label>
+        <input type="radio" id="ingles_hablado_bien" name="ingles_hablado" value="bien">
+        <input type="radio" id="ingles_hablado_regular" name="ingles_hablado" value="regular">
+        <label for="ingles_hablado_regular">Regular</label>
+        <input type="radio" id="ingles_hablado_nada" name="ingles_hablado" value="nada" required>
+        <label for="ingles_hablado_nada">Nada</label>
+    </div>
+
+    <div class="input-group">
+        <label for="ingles_leido">Nivel de inglés - Leído:</label>
+        <input type="radio" id="ingles_leido_excelente" name="ingles_leido" value="excelente">
+        <label for="ingles_leido_excelente">Excelente</label>
+        <input type="radio" id="ingles_leido_bien" name="ingles_leido" value="bien">
+        <label for="ingles_leido_bien">Bien</label>
+        <input type="radio" id="ingles_leido_regular" name="ingles_leido" value="regular">
+        <label for="ingles_leido_regular">Regular</label>
+        <input type="radio" id="ingles_leido_nada" name="ingles_leido" value="nada" required>
+        <label for="ingles_leido_nada">Nada</label>
+    </div>
+
+    <div class="input-group">
+        <label for="ingles_escrito">Nivel de inglés - Escrito:</label>
+        <input type="radio" id="ingles_escrito_excelente" name="ingles_escrito" value="excelente">
+        <label for="ingles_escrito_excelente">Excelente</label>
+        <input type="radio" id="ingles_escrito_bien" name="ingles_escrito" value="bien">
+        <label for="ingles_escrito_bien">Bien</label>
+        <input type="radio" id="ingles_escrito_regular" name="ingles_escrito" value="regular">
+        <label for="ingles_escrito_regular">Regular</label>
+        <input type="radio" id="ingles_escrito_nada" name="ingles_escrito" value="nada" required>
+        <label for="ingles_escrito_nada">Nada</label>
+    </div>
+
+    <div class="input-group">
+        <button type="submit">Enviar</button>
+    </div>
+    </form>
+
+
+
+</body>
+
+</html>
