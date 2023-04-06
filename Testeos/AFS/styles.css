@@ -38,7 +38,21 @@ a {
 }
 
 ul {
+  list-style:none;
+  padding: 1%;
+  font-size:35px;
+  margin: auto;
+  width: 50%;
+  
+}
+
+ol{
   list-style: none;
+  padding: 1%;
+  font-size:20px;
+  margin:2%;
+  width: 50%;
+  text-align: justify ;
 }
 
 h1 {
@@ -47,7 +61,7 @@ h1 {
 }
 
 hr {
-  width: 70%;
+  width: 80%;
   border-style: dotted;
   border-top-style: dashed;
   border-width: 5px;
@@ -60,11 +74,24 @@ iframe {
   object-fit: cover;
 }
 
+#disclaimer{
+  width:14%;
+  position:fixed;
+  right:0;
+  padding:5%;
+  margin: auto;
+  text-align: justify;	
+  top:15%;
+  margin-top:-150px;
+  font-size: 18px;
+}     
+
+
 #par {
   margin: auto;
-  width: 50%;
+  width: 60%;
   text-align: justify;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   padding: 20px;
 }
@@ -160,43 +187,7 @@ iframe {
   }
 }
 
-/*Animations in the text boxes*/
-.container {
-  position: relative;
-  width: 100%;
-}
 
-.description {
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  background-color: #989292;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3s, bottom 0.3s;
-}
-
-.container:hover .description {
-  opacity: 1;
-  bottom: 0;
-}
-
-.container img {
-  width: 100%;
-  margin: auto;
-  transition: filter 0.3s;
-  object-fit: cover;
-  display: grid;
-  grid-gap: 20px;
-}
-
-.container img:hover {
-  filter: brightness(80%);
-  width: 98%;
-}
 
 /*config for the vertical menu*/
 .wrapper {
@@ -254,11 +245,70 @@ iframe {
 
 /*////////////////////////*/
 
+/*Animations in the text boxes*/
+.container {
+  position:relative;
+  width: 100%;
+}
+
+.description {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  background-color: #989292;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s, bottom 0.3s;
+}
+
+.container:hover .description {
+  opacity: 1;
+  bottom: 0;
+}
+
+.container img {
+  width: 100%;
+  margin: auto;
+  transition: filter 0.3s;
+  object-fit: cover;
+  display: block;
+  grid-gap: 20px;
+}
+
+.container img:hover {
+  filter: brightness(80%);
+  width: 98%;
+}
+
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin: auto;
 }
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 0 auto;
+}
+
+
+.gallery2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .galleryVideos {
   margin: auto;
@@ -272,7 +322,7 @@ iframe {
 
 
 
-		.social{
+	.social{
 			/*las imágenes usadas tienen width de 48px*/
 			width:90px;
 			position:fixed;
@@ -285,7 +335,10 @@ iframe {
 			height:205px;
 			/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
 			margin-top:-100px;
-		}
+      font-size: 18px;
+    }     
+
+
 
 
 
