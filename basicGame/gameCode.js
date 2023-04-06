@@ -11,7 +11,10 @@
  *  con un booleano. Para eso haremos un "JSON" de cada character 
  * donde se almacene la ruta de cada objeto y el booleano para asegurar 
  * que carga siempre despues de tile 
+<<<<<<< HEAD
  * 5-Generar de manera aleatoria posiciones en X e Y
+=======
+>>>>>>> 4b2c725 (initial-state)
  * 
  * DESAFÍO: HAZ QUE UN POLLO SE MUEVA CON LAS FLECHAS DEL TECLADO 
  */
@@ -23,7 +26,11 @@ var x;
 var background = {url:"tile.png", loadOk:false};
 var pig = {url:"cerdo.png", loadOk:false};
 var cow = {url:"vaca.png", loadOk: false};
+<<<<<<< HEAD
 var chiken = {url:"pollo.png", loadOk:false};
+=======
+var chiken = {url: "pollo.png", loadOk:false};
+>>>>>>> 4b2c725 (initial-state)
 
 background.image = new Image();
 pig.image = new Image();
@@ -89,6 +96,7 @@ function Draw()
             ctx.drawImage(cow.image, X, Y);  
         }  
     }
+<<<<<<< HEAD
 
     if (cow.loadOk && background.loadOk && pig.loadOk) 
     {
@@ -99,6 +107,8 @@ function Draw()
             ctx.drawImage(chiken.image, X, Y);  
         }  
     }
+=======
+>>>>>>> 4b2c725 (initial-state)
 }
 
 
@@ -107,4 +117,8 @@ function RandomNum(min, max)
     var r;
     r = Math.floor((Math.random() * (max-min) + 1) + min);
     return r;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4b2c725 (initial-state)
