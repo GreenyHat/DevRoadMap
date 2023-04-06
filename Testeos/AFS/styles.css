@@ -75,10 +75,10 @@ iframe {
 }
 
 #disclaimer{
-  width:10%;
-  position:absolute;
+  width:14%;
+  position:fixed;
   right:0;
-  padding: 4%;
+  padding:5%;
   margin: auto;
   text-align: justify;	
   top:15%;
