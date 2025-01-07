@@ -1,0 +1,345 @@
+nav {
+  float: right; /* move the nav to the left */
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav ul li a {
+  display: block; /* Transform the 'a' elemnts to block to manipulate the padding//Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #3ead47;
+}
+
+body {
+  color: rgb(214, 220, 185);
+  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: auto;
+  width: 80%;
+}
+
+a {
+  color: rgb(99, 99, 231);
+}
+
+ul {
+  list-style:none;
+  padding: 1%;
+  font-size:35px;
+  margin: auto;
+  width: 50%;
+  
+}
+
+ol{
+  list-style: none;
+  padding: 1%;
+  font-size:20px;
+  margin:2%;
+  width: 50%;
+  text-align: justify ;
+}
+
+h1 {
+  margin: auto;
+  color: #c17f41;
+}
+
+hr {
+  width: 80%;
+  border-style: dotted;
+  border-top-style: dashed;
+  border-width: 5px;
+  border-color: #6514a8;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#disclaimer{
+  width:14%;
+  position:fixed;
+  right:0;
+  padding:5%;
+  margin: auto;
+  text-align: justify;	
+  top:15%;
+  margin-top:-150px;
+  font-size: 18px;
+}     
+
+
+#par {
+  margin: auto;
+  width: 60%;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+#menu {
+  background: rgba(0, 0, 0, 0.9);
+  width: 0%;
+  position: fixed;
+  z-index: 100;
+  margin: auto;
+}
+
+#imagend {
+  width: 100%;
+}
+
+#url {
+  color: #cce068;
+}
+#content {
+  width: 70%;
+  margin: auto;
+}
+
+#strong {
+  color: rgb(4, 204, 114);
+}
+/*///////////////////////////////////////////////*/
+
+/* Keyframes */
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(1.8) translateY(-4.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes wars {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(5.5em);
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes spin-letters {
+  0%,
+  10% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  70%,
+  86% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+  95%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes move-byline {
+  0% {
+    transform: translateZ(5em);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+
+
+/*config for the vertical menu*/
+.wrapper {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.vertical {
+  width: 200px;
+}
+
+/*******************************/
+/* Animation properties */
+.star {
+  animation: star 10s ease-out infinite;
+}
+.wars {
+  animation: wars 10s ease-out infinite;
+}
+.byline span {
+  animation: spin-letters 10s linear infinite;
+}
+.byline {
+  animation: move-byline 10s linear infinite;
+}
+
+/* Make the 3D work on the container */
+.starwars-demo {
+  perspective: 800px;
+  transform-style: preserve3d;
+}
+
+.starwars-demo {
+  height: 17em;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 34em;
+}
+
+.star,
+.wars {
+  position: static;
+}
+
+.star {
+  top: -0.2em;
+}
+
+.wars {
+  bottom: -0.5em;
+}
+
+/*////////////////////////*/
+
+/*Animations in the text boxes*/
+.container {
+  position:relative;
+  width: 100%;
+}
+
+.description {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  background-color: #989292;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s, bottom 0.3s;
+}
+
+.container:hover .description {
+  opacity: 1;
+  bottom: 0;
+}
+
+.container img {
+  width: 100%;
+  margin: auto;
+  transition: filter 0.3s;
+  object-fit: cover;
+  display: block;
+  grid-gap: 20px;
+}
+
+.container img:hover {
+  filter: brightness(80%);
+  width: 98%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 0 auto;
+}
+
+
+.gallery2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.galleryVideos {
+  margin: auto;
+  width: 50%;
+  line-height: 1%;
+  padding: 20px;
+}
+
+/*Footer*/
+
+
+
+
+	.social{
+			/*las imágenes usadas tienen width de 48px*/
+			width:90px;
+			position:fixed;
+			top:50px;
+			right:0;
+      margin: auto;
+      text-align: justify;	
+      /*border:1px solid #000;*/
+			top:100%;
+			height:205px;
+			/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+			margin-top:-100px;
+      font-size: 18px;
+    }     
+
+
+
+
+
+	

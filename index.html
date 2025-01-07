@@ -1,152 +1,476 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="author" content="GreenyHat" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <!--IBM FONT-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
+    <!--Page Title-->
+    <title>PortFolio GreenyHat</title>
 
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <title>Toni Cannoli's site</title>
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="css/namari-color.css">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+   <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-  <br />
-  <hr />
-  <h1>Toni Cannoli</h1>
-  <ul>
-    <li>
-      <a id="url" href="https://github.com/GreenyHat" title="My GitHub" target="_blank">My Github</a>
-    </li>
-    <li>
-      <a id="url" href="https://www.diariorc.com/autor/antonioramirezgarcia/" title="political philosopy articles"
-        rel="nofollow" target="_blank">Philosophy Articles(ES)</a>
-    </li>
-    <li>
-      <a id="url" href="https://www.youtube.com/playlist?list=PLK7EmKTLLaW9LOXjd0_cKAwYusR1NFGn8"
-        title="Youtube roadmap gamedev" target="_blank">GameDev Videos</a>
-    </li>
-  </ul>
-  <br />
 
-  <div align="center">
-    <img src="Images/Toni.png" alt="Toni picture " height="150" width="150" />
-  </div>
-  <br />
-  <blockquote style="margin-left: 45%">
-    <pre><em>"Eppur si muove"</em>
-                -Galileo Galilei</pre>
-  </blockquote>
-  <br />
-  <br />
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
 
-  <hr />
-  <h4>My first steps</h4>
-  <ul>
-    <li>
-      <a id="url" href="AfsPage.html" title="Dummy Star Wars Page" target="_blank">Star Wars Page</a>
-    </li>
-    <li>
-      <a id="url" href="PacmanBlog/index.html" title="Pacman Blog" target="_blank">What would it be your weight in
-        Marth?</a>
-    </li>
-    <li>
-      <a id="url" href="basicGame/index.html" title="Test with canvas" target="_blank">Test with canva's elemets</a>
-    </li>
-    <li>
-      <a id="url" href="jSExec/index.html" title="Math and draw" target="_blank">Math and basic canvas drawing</a>
-    </li>
-    <li>
-      <a id="url" href="keys/keys.html" target="_blank">Draw with keys</a>
-    </li>
-    <li>
-      <a id="url" href="https://github.com/GreenyHat/Java-School/tree/master" target="_blank">Development with Java</a>
-    </li>
-  </ul>
-  <!-- <hr /> -->
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
 
-  <!-- <h3>My skills:</h3>
-  <table cellspacing="10">
-    <tr>
-      <td>Creative writing</td>
-    </tr>
+<div id="wrapper">
 
-    <tr>
-      <td>Unity3D</td>
-    </tr>
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
 
-    <tr />
-    <tr>
-      <td>UnrealEngine4</td>
-    </tr>
-    <tr>
-      <td>Git and GitFlow</td>
-    </tr>
-    <tr>
-      <td>HTML</td>
-    </tr>
-    <tr>
-    <tr>
-      <td>Java</td>
-    </tr>
-    <tr>
-      <td>SpringFramework</td>
-    </tr>
-    <tr>
-      <td>PHP</td>
-    </tr> -->
+                    <!--Logo-->
+                    <div id="logo">
 
-  </table>
-  <hr />
-  <h3>My work experiences:</h3>
-  <table cellspacing="10">
-    <tr>
-      <td>2020-2021</td>
-      <td>Level designer at Satoshi's Games</td>
-    </tr>
-    <tr>
-      <td>2021-2022</td>
-      <td>Community manager at Magic's Stars</td>
-    </tr>
-  </table>
-  <br />
+                        <!--Logo that is shown on the banner-->
+                        <img src="images/G.png" id="banner-logo" alt="Landing Page"/>
+                        <!--End of Banner Logo-->
 
-  <hr />
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <!--End of Navigation Logo-->
 
-  <h3>"A lot of text":</h3>
+                    </div>
+                    <!--End of Logo-->
 
-  <p id="par">
-    In the begining I studied philosophy at the UGR (Granada, Spain) and have
-    written some articles of dubious quality on political philosophy. <br />
+                    <aside>
 
-    I spent some time working as a level designer and programmer on
-    UnrealEngine 4 for a video game company whose business model is based on
-    trade limited NFT parts that we created ourselves. I also spent time as
-    community manager of models who sell their products. Beyond that, all my
-    skills can be seen on GitHub or maybe a future blog, which may be better
-    than this (wouldn't be difficult). Next, I share a video that shows the
-    start menu of a game who was working with Satoshi's Games as a level
-    designer with UnrealEngine 4 (it was my first time) after designing a
-    pirate cave made with ruined remains of an ancient building precipitated
-    in a "whimsical manner". In case anyone might be interested in the game,
-    its name is Satvival and it was published on different platforms.
-  </p>
-  <a id="url" target="_blank" href=" https://launcher.elixir.app/games/satvival">
-    Game link</a>
-  <br />
-  <br />
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/antonio-ram%C3%ADrez-garc%C3%ADa-24b569208/">
+                                    <i class="fa-brands fa-linkedin fa-1x"></i><span>Linkedin+</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Github" href="https://github.com/GreenyHat">
+                                    <i class="fa-brands fa-github fa-1x"></i><span>Github</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Instagram" href="http://www.instagram.com/atencionestoica">
+                                    <i class="fa-brands fa-instagram fa-1x"></i><span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Curriculum" href="https://drive.google.com/uc?id=1ZNHmFsbu326A7jKbvHdnpwgQBrRMS2qp&export=download">
+                                    <i class="fa-solid fa-download fa-1x"></i><span>Descargar</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
 
-  <div style="text-align: center">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/HoB90IDUcdY" title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </div>
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="#banner">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#services">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#testimonials">Testimonios</a>
+                            </li>
+                            <li>
+                                <a href="#clients">Proyectos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+
+            <div class="col-38">
+
+                <div class="section-heading">
+                    <h1>It's GreenyHat!</h1>
+                    Soy Antonio Ramírez, desarrollador de software con conocimientos frontend y backend.
+                    También me interesan la IA, la ciberseguridad, la cerveza artesanal y la filosofía. 
+                    Pero mejor que hablen mis proyectos   <b>(FIN DE LA CHAPA)</b>
+                    </h2>
+                </div>
+
+                <!--Call to Action-->
+                <a href="#clients" class="button">MIS PROYECTOS</a>
+                <!--End Call to Action-->
+
+            </div>
+
+        </div><!--End of Row-->
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+        <!--Introduction-->
+        <section id="about" class="introduction scrollto">
+
+            <div class="row clearfix">
+
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>SKILLS</h3>
+                        <h2 class="section-title">Qué Ofrezco</h2>
+                        <p class="section-subtitle">
+                            He tocado front y back, aunque por circustancias de la vida siempre he acabado más 
+                            en frontend. Actualmente estoy formándome por mi cuenta en IA y Ciberseguridad
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-2-3">
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa-brands fa-html5 fa-5x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>HTML5 &amp; CSS3</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa-brands fa-java fa-5x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Java &amp; SpringBoot</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa-brands fa-js fa-5x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>JavaScript</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa-brands fa-python fa-5x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>Python</h4>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+                    
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa-solid fa-database fa-5x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>SQL y NoSQL</h4>
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                    <!--Icon Block-->
+                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+                        <!--Icon-->
+                        <div class="icon">
+                            <i class="fa-solid fa-skull-crossbones fa-5x"></i>
+                        </div>
+                        <!--Icon Block Description-->
+                        <div class="icon-block-description">
+                            <h4>CyberSecurity</h4>
+                            <p> </p>
+                        </div>
+                    </div>
+                    <!--End of Icon Block-->
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <!--End of Introduction-->
+
+
+
+        <!--Content Section-->
+        <div id="services" class="scrollto clearfix">
+
+            <div class="row no-padding-bottom clearfix">
+
+
+                <!--Content Left Side-->
+                <div class="col-3">
+                    <!--User Testimonial-->
+                    <blockquote class="testimonial text-right bigtest">
+                        <q>La imaginación a menudo nos llevará a mundos que nunca existieron, 
+                            pero sin ella no iremos a ninguna parte</q>
+                        <footer>— Carl Sagan</footer>
+                    </blockquote>
+                    <!-- End of Testimonial-->
+
+                </div>
+                <!--End Content Left Side-->
+
+                <!--Content of the Right Side-->
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>MÁS QUE CÓDIGO</h3>
+                        <h2 class="section-title">Blog de lecturas</h2>
+                        <p class="section-subtitle">Dejar a un lado la pantalla y oler un buen libro 
+                            junto a una buena cerveza o un buen café, según el dia, no solo es recomendable,
+                            diría que hasta es imprescindible
+                        </p>
+                    </div>
+                    <p>
+                        La idea para esta sección es incluir libros que he leído y notas que he sacado de dichos libros,
+                        ya sean, notas personales, citas del autor o cualquier cosa que considere digna de mención.
+                    </p>
+                
+                    <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+                    <a href="#services" class="button">BlOG (In-Progress)</a>
+                </div>
+                <!--End Content Right Side-->
+
+                <div class="col-3">
+                    <img src="images/dancer.jpg" alt="Dancer"/>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--End of Content Section-->
+
+        <!--Testimonials-->
+        <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+
+            <div class="row clearfix">
+
+                <div class="section-heading">
+                    <h3>FEEDBACK</h3>
+                    <h2 class="section-title">Con Quién He Trabajado</h2>
+                </div>
+
+                <!--User Testimonial-->
+                <blockquote class="col-3 testimonial classic">
+                    <img src="/images/user-images/Carlos Roldán.jpeg" alt="User"/>
+                    <q>Antonio Ramirez fue un miembro valioso del equipo de Elixir Games, 
+                        y siempre demostró una iniciativa y actitud ejemplares
+                         para abordar desafíos con una mentalidad "out-of-the-box</q>
+                        <a href="https://www.linkedin.com/in/antonio-ram%C3%ADrez-garc%C3%ADa-24b569208/details/recommendations/?detailScreenTabIndex=0">Opinión completa</a>
+                    <footer>Carlos Roldán - CEO de Elixir Games</footer>
+                </blockquote>
+                <!-- End of Testimonial-->
+
+                <!--User Testimonial-->
+                <blockquote class="col-3 testimonial classic">
+                    <img src="images/user-images/Danyl Shatko.jpeg" alt="User"/>
+                    <q>Antonio Ramirez demostró ser una persona con una capacidad única para adaptarse rápidamente a cambios y 
+                        nuevos desafíos, lo cual fue fundamental en nuestro equipo en Elixir Games.</q>
+                        <a href="https://www.linkedin.com/in/antonio-ram%C3%ADrez-garc%C3%ADa-24b569208/details/recommendations/?detailScreenTabIndex=0">Opinión completa</a>
+
+                    <footer>Danyl Shatko - Chief Gaming Officer de Elixir Games</footer>
+                </blockquote>
+                <!-- End of Testimonial-->
+
+                <!--User Testimonial-->
+                <blockquote class="col-3 testimonial classic">
+                    <img src="images/user-images/Octo.jpeg" alt="User"/>
+                    <q> I had the pleasure of working with Antonio over the last season, 
+                        and I can confidently say he is one of the most skilled and dedicated backend developers I have encountered.</q>
+                        <a href="https://www.linkedin.com/in/antonio-ram%C3%ADrez-garc%C3%ADa-24b569208/details/recommendations/?detailScreenTabIndex=0">Opinión completa</a>
+
+                    <footer>Octopus - Product Manager and Bizdev de Elixir Games</footer>
+                </blockquote>
+                <!-- End of Testimonial-->
+
+            </div>
+
+        </aside>
+        <!--End of Testimonials-->
+
+        <!--Clients-->
+        <section id="clients" class="scrollto clearfix">
+            <div class="row clearfix">
+
+                <div class="col-3">
+
+                    <div class="section-heading">
+                        <h3>PROYECTOS</h3>
+                        <h2 class="section-title">Qué He Hecho</h2>
+                    </div>
+
+                </div>
+
+                <div class="col-2-3">
+
+                    <a href="https://www.agrosolexport.com/" class="col-3" target="_blank">
+                        <img src="/images/project-images/Agrsool.png" alt="Company"/>
+                        <div class="client-overlay"><span>Diseño Web</span></div>
+                    </a>
+
+                    <a href="AfsPage.html" class="col-3" target="_blank">
+                        <img src="images/project-images/AFS.png" alt="Company"/>
+                        <div class="client-overlay"><span>Diseño Web</span></div>
+                    </a>
+
+                    <a href="https://news.elixir.games/satvival-getting-started/" class="col-3" target="_blank">
+                        <img src="images/project-images/Satvival.png" alt="Company"/>
+                        <div class="client-overlay"><span>Level Design</span></div>
+                    </a>
+                    <a href="https://mbcredit-sur.com/" class="col-3" target="_blank">
+                        <img src="images/project-images/CreditSur.png" alt="Company"/>
+                        <div class="client-overlay"><span>Lógica Financiera</span></div>
+                    </a>
+                    <a href="#" class="col-3">
+                        <img src="images/project-images/Redoble Beer.png" alt="Company"/>
+                        <div class="client-overlay"><span>CRMs</span></div>
+                    </a>
+                    <a href="frontend_chat/index.html" class="col-3" target="_blank">
+                        <img src="images/project-images/IA.png" alt="Company"/>
+                        <div class="client-overlay"><span>IA</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--End of Clients-->
+
+               
+
+
+    </main>
+    <!--End Main Content Area-->
+
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+
+            <p id="copyright" class="col-2">Made with the <a href="https://www.shapingrain.com">ShapingRain's</a> help</p>
+
+            <!--Social Icons in Footer-->
+            <ul class="col-2 social-icons">
+                <li>
+                    <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/antonio-ram%C3%ADrez-garc%C3%ADa-24b569208/">
+                        <i class="fa-brands fa-linkedin fa-1x"></i><span>Linkedin+</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Github" href="https://github.com/GreenyHat">
+                        <i class="fa-brands fa-github fa-1x"></i><span>Github</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Instagram" href="http://www.instagram.com/atencionestoica">
+                        <i class="fa-brands fa-instagram fa-1x"></i><span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Curriculum" href="https://drive.google.com/uc?id=1ZNHmFsbu326A7jKbvHdnpwgQBrRMS2qp&export=download">
+                        <i class="fa-solid fa-download fa-1x"></i><span>Descargar</span>
+                    </a>
+                </li>
+            </ul>
+              
+            </ul>
+            <!--End of Social Icons in Footer-->
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="js/jquery.1.8.3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script src="js/featherlight.gallery.min.js"></script>
+<script src="js/jquery.enllax.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.stickyNavbar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/images-loaded.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/site.js"></script>
+
+
 </body>
-
 </html>
