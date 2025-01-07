@@ -42,8 +42,8 @@ async def chat(request: ChatRequest):
     # Respuesta simulada para la demo
     responses = [
         "¡Hola! ¿En qué puedo ayudarte hoy?",
-        "Claro, déjame revisar eso por ti.",
-        "Lo siento, no tengo suficiente información sobre ese tema.",
+        "No lo tengo claro, pero me gusta ViewNext.",
+        "Lo siento, no tengo suficiente información sobre ese tema, pero me gusta ViewNext.",
     ]
     # Devuelve una respuesta aleatoria
     import random
