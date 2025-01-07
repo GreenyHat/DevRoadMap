@@ -353,9 +353,10 @@ section {
 }
 
 #logo img {
-    max-height: 22px;
+    max-height: 230px; 
     vertical-align: middle;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-top: -60px;
 }
 
 #navigation-logo {
@@ -759,6 +760,8 @@ h6 {
 
 .section-heading {
     padding: 0 0 15px 0;
+    letter-spacing: 2px; /* Ajusta el valor según lo que necesites */
+
 }
 
 .section-subtitle {
